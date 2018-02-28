@@ -26,4 +26,5 @@ Documentation of the api is up to date
 - Front-end is broken when backend is offline. Should have a place holder instead.
 - Backend does not have tests.
 - Backend does not have proper error handling.
+- Import semantic-ui via npm and not locally
 - And many more.
