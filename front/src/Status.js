@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import request from 'superagent';
 
 /**
@@ -12,10 +12,10 @@ class Status extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      status: new String(),
-      name : new String(),
-      loyaltyPoints : new String(),
-      numberOfRides : new String()
+      status: '',
+      name : '',
+      loyaltyPoints : '',
+      numberOfRides : ''
     };
   }
 

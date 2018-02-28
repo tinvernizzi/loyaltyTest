@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Container, Divider, Dropdown, Grid, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
+import { Container, Divider, Header, Image, List, Menu, Segment } from 'semantic-ui-react'
 import Status from './Status.js';
 
 class App extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
+  
   render() {
     return (
       <div className="App">
