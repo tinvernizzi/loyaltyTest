@@ -21,7 +21,7 @@ async function getRiderStatus(req, res) {
         case 3:
             return res.status(HttpStatus.OK).send({ status: 'platinum'});
         default:
-            return res.status(HttpStatus.BAD_REQUEST).send({'code' : 400, 'message': 'Bad request.'});
+            return res.status(HttpStatus.BAD_REQUEST).send({'code' : 500, 'message': 'Error in the data structure.'});
     }
     // Could add a case for invalid query
 }
@@ -81,7 +81,7 @@ async function addRide(req, res) {
             model.myDatabase[id].loyaltyPoints = model.myDatabase[id].loyaltyPoints + ( 10 * parseInt(req.body.price, 10) );
             break;
         default:
-            return res.status(HttpStatus.BAD_REQUEST).send({'code' : 400, 'message': 'Bad request.'});
+            return res.status(HttpStatus.BAD_REQUEST).send({'code' : 500, 'message': 'Error in the data structure.'});
     }
 
     model.myDatabase[id].numberOfRides = model.myDatabase[id].numberOfRides + 1;
