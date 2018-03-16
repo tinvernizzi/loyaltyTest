@@ -57,7 +57,6 @@ router.get('/:id/status', wrap(controller.getRiderStatus));
  */
 router.get('/:id/name', wrap(controller.getRiderName));
 
-
 /**
  * @api {get} /riders/:id/numberOfRides get the number of rides of the rider
  * @apiGroup Riders
@@ -82,7 +81,6 @@ router.get('/:id/name', wrap(controller.getRiderName));
  *
  */
 router.get('/:id/numberOfRides', wrap(controller.getNumberOfRides));
-
 
 /**
  * @api {get} /riders/:id/loyaltyPoints get the loyalty Points of the rider
@@ -109,7 +107,6 @@ router.get('/:id/numberOfRides', wrap(controller.getNumberOfRides));
  */
 router.get('/:id/loyaltyPoints', wrap(controller.getLoyaltyPoints));
 
-
 /**
  * @api {post} /riders/:id/rides add a ride to the user
  * @apiGroup Riders
@@ -135,6 +132,6 @@ router.get('/:id/loyaltyPoints', wrap(controller.getLoyaltyPoints));
  *     }
  *
  */
-router.post('/:id/rides', wrap(controller.addRide))
+router.post('/:id/rides', wrap(controller.addRide));
 
 module.exports = router;
