@@ -2,14 +2,13 @@
  * The rest of this file mocks a riders database.
  * Ideally, we should use a proper database.
  */
-
 function Rider(id, name, numberOfRides, loyaltyPoints) {
     this.id = id;
     this.name = name;
     this.numberOfRides = numberOfRides;
     this.loyaltyPoints = loyaltyPoints;
 
-    this.updateStatus = function(){
+    this.updateStatus = function (){
         if (this.numberOfRides < 20) {
             this.status = 0; // Bronze
         }
@@ -27,7 +26,6 @@ function Rider(id, name, numberOfRides, loyaltyPoints) {
     this.updateStatus();
 }
 
-
 var myDatabase = [
     new Rider(0, 'Anna', 0, 65), //bronze
     new Rider(1, 'Tanguy', 10, 15), //bronze
@@ -36,8 +34,6 @@ var myDatabase = [
     new Rider(4, 'Robert', 150, 87) //platinum
 ];
 
-
 module.exports = {
-    Rider,
     myDatabase
 };
