@@ -44,7 +44,7 @@
     "http-errors": "1.5.1",
     "http-status-codes": "1.1.6",
     "joi": "10.2.2",
-    "lodash": "4.17.4",
+    "lodash": "4.17.19",
     "moment": "2.19.3",
     "mongodb": "2.2.24",
     "socket.io": "2.0.4"
